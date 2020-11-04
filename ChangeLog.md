@@ -1,5 +1,11 @@
 # Change Log
-
+ - 1.0.2 (03rd Nov 2020)
+   - Merged Audit and Telemetry Report
+   - Compliance Report and Log content separated
+   - Report format changed for Compliance , Audit and Telemetry
+   - Compliance added for defect : CSCvw03683
+   
+      
  - 1.0.1 (15th October 2020)
     - Included Live Log Analyze option in Log analyzer
     - Fixed inventory log analyzer script execution issue
@@ -11,4 +17,4 @@
     - Included pdf report generation
     
       
-- 1.0.0 - First release 
+- 1.0.0 - First release

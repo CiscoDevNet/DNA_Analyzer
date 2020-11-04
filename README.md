@@ -56,6 +56,8 @@ $ docker cp a80059e79588:/opt/maglev/services/sda-helper-service/7.3.263.62640/d
 
 cd dna-analyzer
 
+chmod 755 *
+
 /DNA_Analyzer
 
 ````
@@ -100,6 +102,8 @@ We are adding new features quite often.  If you have downloaded an older version
 ```
 $ cd ./dna_analyzer 
 $ git pull
+
+chmod 755 *
 ```
 
 ## To Run
@@ -113,7 +117,7 @@ $ ./dna-analyzer/DNA_Analyzer
 *****************************************************************************
 *****                                                                   *****
 *****          Welcome to the Cisco DNA Center Analyzer Tool            *****
-*****                         Version 1.0.1                             *****
+*****                         Version 1.0.2                             *****
 *****                                                                   *****
 *****************************************************************************
 *****************************************************************************
@@ -125,8 +129,7 @@ $ ./dna-analyzer/DNA_Analyzer
 			 1 -> Log Analyzer 
 			 2 -> Database Data Collection 
 			 3 -> Database Compliance checker 
-			 4 -> SDA Telemetry 
-			 5 -> DNAC SDA Audit Report 
+			 4 -> SDA Audit and Telemetry 
 			 6 -> Search Known Cisco External Defect / Issues 
 			 7 -> Exit 
 

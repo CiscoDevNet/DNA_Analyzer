@@ -20,55 +20,13 @@ This tool will help reduce number of BEMS case as it will help find the error wh
 
 #**Usage Example:**
 
-This tool is part of DNAC from Cyclops patch release 3 onwards.(Cisco DNAC 2.1.2.3)
 
-```` 
-Steps:
-
-1. SSH Login to DNAC using maglev user.
-
-2. run following command to get the sda-helper container id
-
-docker ps | grep k8s_sda-helper-service_sda-helper-service | awk '{print $1}'
-
- 
-
-$ docker ps | grep k8s_sda-helper-service_sda-helper-service | awk '{print $1}'
-a80059e79588
-
- 
-
-3. Take the ID from above command output and run following command by replacing <dockerID>
-
-$ docker cp <dockerID>:/opt/maglev/services/sda-helper-service/7.3.263.62640/dev-resources/dna-analyzer .
-
- 
-
-$ docker cp a80059e79588:/opt/maglev/services/sda-helper-service/7.3.263.62640/dev-resources/dna-analyzer .
-
- 
-
-4. Now you will have "dna-analyzer" directory created in the folder which will have the script and runtime binary.
-
- 
-
-5. You can run script by changing the directory and run the commands.
-
-cd dna-analyzer
-
-chmod 755 *
-
-/DNA_Analyzer
-
-````
-
-## Previous Versions of Cisco DNAC
-###To Download
+##To Download
 
 This script needs to be downloaded onto Cisco DNA Center.  First ssh to DNAC.
 
 ```
-ssh -p2222 maglev@<dnacIP>
+ssh -p 2222 maglev@<dnacIP>
 ```
 
 The next step is to get the script onto Cisco DNA Center.  

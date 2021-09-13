@@ -75,19 +75,19 @@ $ ./dna-analyzer/DNA_Analyzer
 *****************************************************************************
 *****                                                                   *****
 *****          Welcome to the Cisco DNA Center Analyzer Tool            *****
-*****                         Version 1.0.2                             *****
+*****                         Version 2.0.0                             *****
 *****                                                                   *****
 *****************************************************************************
 *****************************************************************************
 
 
-
 						 Cisco DNAC Data Analyzer
 		 Options
-			 1 -> Log Analyzer 
-			 2 -> Database Data Collection 
-			 3 -> Database Compliance checker 
-			 4 -> SDA Audit and Telemetry 
+			 1 -> Debug Bundle Collector 
+			 2 -> Log Analyzer 
+			 3 -> Database Data Collection 
+			 4 -> Database Compliance checker 
+			 5 -> SDA Audit and Telemetry 
 			 6 -> Search Known Cisco External Defect / Issues 
 			 7 -> Exit 
 
@@ -96,12 +96,13 @@ $ ./dna-analyzer/DNA_Analyzer
 
 ***************************************************************************
 
+
 ```
 
 # Logs and Output files
 After the script finishes the logs and report will be available fore references.
 ## Report and Logs can be found at:
- Cisco DNA Center Analyzer Tool logs will be available in ./dna_analyzer_logs and Reports will be available in ./dna_analyzer/reports. 
+ Cisco DNA Center Analyzer Tool logs will be available in ./dna_analyzer , ./dna_analyzer_logs and Reports will be available in ./dna_analyzer/reports. 
  Collect all the logs and attach to Service request if you are seeking help from escalation BU.
 
 

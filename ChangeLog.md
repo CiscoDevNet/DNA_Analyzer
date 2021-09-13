@@ -1,4 +1,14 @@
 # Change Log
+ 
+ - 2.0.0
+     - Added Debug Bundle Collection
+     - Added some additional tables data collection
+ - 1.0.3
+   - Added compliance for multicast deployment CSCvv89025
+   - Removed release name from readme file as per feedback
+   - Added all sda app data collection option
+
+
  - 1.0.2 (03rd Nov 2020)
    - Merged Audit and Telemetry Report
    - Compliance Report and Log content separated

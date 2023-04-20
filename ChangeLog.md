@@ -1,5 +1,7 @@
 # Change Log
  
+ - 2.0.1
+     - Added Wireless DB collection
  - 2.0.0
      - Added Debug Bundle Collection
      - Added some additional tables data collection

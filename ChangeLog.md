@@ -1,4 +1,6 @@
 # Change Log
+ - 2.0.1
+     - Added wireless DB collection
  
  - 2.0.1
      - Added Wireless DB collection

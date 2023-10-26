@@ -1,21 +1,21 @@
 # DNA Analyzer
 
-The  DNA Analyzer is command line tool to perform a variety of RCA / Log Analyzer, Various application related data collection from postgres database table, Finding inconsistent data existence from various application related postgres table and Search Known defect based on Log Analyzer result.
+The  DNA Analyzer is a command line tool to perform a variety of RCA / Log Analyzer, Various application data collection from Postgres database table, Finding inconsistent data existence from various application related Postgres table and Search Known defects based on Log Analyzer result.
 
-This tool uses various CLI Show command in DNAC, Show command in postgres tables and Makes REST API calls to CDETS Application. This toool is completely read only and it will not perform any write operation into DNAC Application.
+This tool uses various CLI Show commands in DNAC, Show commands in Postgres tables, and makes REST API calls to the CDETS Application. This tool is completely read-only and it will not perform any write operation into DNAC Application.
  
 #**History:**
 
-As part of SDA Escalation Engineer, Devloper or DevTest Engineer, we have to analyze the DNAC RCA log files every day and sometimes needs to analyze multiple files to find needle in hayes stack. In order to avoid such laboriour process and spending time on repeated task, SDA escalation team prepared this Log Analyzer scripts which will find the task success/failure details from the log.
+As part of  SDA Escalation Engineer, Developer, or DevTest Engineer, we have to analyze the DNAC RCA log files every day and sometimes need to analyze multiple files to find needle in hayes stack. In order to avoid such a laborious process and spending time on repeated tasks, SDA escalation team prepared this Log Analyzer script which will find the task success/failure details from the log.
 
 **For Escalation team:**
-This will help reduce the burden of going through line by line in log file.
+This will help reduce the burden of going through line by line in a log file.
 
-**For Develper/Test Engineer:**
-This tool will help in day-to-day task of quickly determing the failures and enhance the code wherever it requires. This can allow them to spend time on other code and feature devleopment/testing.
+**For Developer/Test Engineer:**
+This tool will help in the day-to-day tasks of quickly determining the failures and enhancing the code wherever it is required. This can allow them to spend time on other code and feature development/testing.
 
 **For TAC Engineer:**
-This tool will help reduce number of BEMS case as it will help find the error which can be searched in known issue list.
+This tool will help reduce the number of BEMS cases as it will help find the error which can be searched in a known issue list.
 
 
 #**Usage Example:**
@@ -23,13 +23,13 @@ This tool will help reduce number of BEMS case as it will help find the error wh
 
 ##To Download
 
-This script needs to be downloaded onto Cisco DNA Center.  First ssh to DNAC.
+This script needs to be downloaded onto the Cisco DNA Center.  First ssh to DNAC.
 
 ```
 ssh -p 2222 maglev@<dnacIP>
 ```
 
-The next step is to get the script onto Cisco DNA Center.  
+The next step is to get the script onto the Cisco DNA Center.  
 
 There are three ways of doing this, depending on access from DNAC to the internet
  
@@ -66,8 +66,8 @@ chmod 755 *
 
 ## To Run
 
-There will be a directory called dna-analyzer.  You can either change into directory, or run direct from the home directory.
-You will be showing menu and options and rest of them are self explanatory.
+There will be a directory called dna-analyzer.  You can either change into the directory or run directly from the home directory.
+You will be showing the menu and options and the rest of them are self-explanatory.
 ```
 $ ./dna-analyzer/DNA_Analyzer
 
@@ -75,24 +75,25 @@ $ ./dna-analyzer/DNA_Analyzer
 *****************************************************************************
 *****                                                                   *****
 *****          Welcome to the Cisco DNA Center Analyzer Tool            *****
-*****                         Version 2.0.0                             *****
+*****                         Version 2.1.1                             *****
 *****                                                                   *****
 *****************************************************************************
 *****************************************************************************
 
 
-						 Cisco DNAC Data Analyzer
-		 Options
-			 1 -> Debug Bundle Collector 
-			 2 -> Log Analyzer 
-			 3 -> Database Data Collection 
-			 4 -> Database Compliance checker 
-			 5 -> SDA Audit and Telemetry 
-			 6 -> Search Known Cisco External Defect / Issues 
-			 7 -> Exit 
+                                                 Cisco DNAC Data Analyzer
+                 Options
+                         1 -> Debug Bundle Collector 
+                         2 -> Log Analyzer 
+                         3 -> Database Data Collection 
+                         4 -> Database Compliance checker 
+                         5 -> SDA Audit and Telemetry 
+                         6 -> Search Known Cisco External Defect / Issues 
+                         7 -> Apply Workaround for a Known Defect 
+                         8 -> Exit 
 
 
-	 For Feedback/Support Reachout : log-analyzer-feedback@cisco.com
+         For Feedback/Support Reach out : log-analyzer-feedback@cisco.com
 
 ***************************************************************************
 
